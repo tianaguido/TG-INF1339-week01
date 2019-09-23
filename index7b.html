@@ -36,10 +36,25 @@
             return(binary_numbers[decimal])
             
         }
-        </script>
-    </head> 
-    <body> 
-        <h2> Version 5 Adding Input Keypad</h2>
+        
+         function dec2bin2 (decimal) {
+            var quotient = decimal
+            var output = ''
+            while (quotient > 0) {
+                remainder = quotient % 2
+                if (remainder == 1)
+                    {output = '1' + output}
+                else
+                    {output = '0' + output}
+                quotient = Math.floor(quotient/2)
+            }
+            while (output.length < 4) {output = '0' + output}
+            return(output)
+        }
+    </script>
+    </head>
+    <body>
+        <h2>Version 7 Stubs for Parts 3 and 4</h2>
         <table class= "standardTable"> 
             <tr> 
                 <td class= "blackbox"><h3> Keypad </h3> 
